@@ -1,16 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import AllRoutes from './routes'
+
 import './index.css';
-import Home from './views/Home';
-import Login from './views/Login'
-import Signup from './views/Signup';
-
-
-
 
 ReactDOM.render(
   <React.StrictMode>
-    <Signup/>
+    <AllRoutes/>
   </React.StrictMode>,
   document.getElementById('root')
 );

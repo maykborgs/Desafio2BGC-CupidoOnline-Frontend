@@ -10,27 +10,27 @@ main img {
   width: 50%;
 }
 
-form {
+#homeform {
   height: 91.5vh;
   width: 50vw;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: baseline;
   margin-left: 30px;
   justify-content: center;
   font-family: "Fredoka", sans-serif;
 }
-form input {
+#homeform input {
   margin-bottom: 20px;
 }
 
-form p {
+#homeform p {
   font-family: "Fredoka", sans-serif;
   font-size: xx-large;
   text-align: left;
 }
 
-form p img {
+#homeform p img {
   height: 25px;
   width: 20px;
 }
@@ -63,7 +63,7 @@ input:hover {
   border: pink 1px solid;
 }
 
-button {
+#homebutton {
   font-family: "Fredoka", sans-serif;
   background-color: #f8f5f8;
   border-radius: 10px;
@@ -74,7 +74,7 @@ button {
   font-weight: bold;
 }
 
-button:hover {
+#homebutton:hover {
   background-color: pink;
   transition: 1s;
 }

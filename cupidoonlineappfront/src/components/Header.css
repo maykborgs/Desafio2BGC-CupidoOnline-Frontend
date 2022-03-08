@@ -27,6 +27,8 @@
   font-weight: 300;
   font-size: x-large;
   cursor: pointer;
+  outline: none;
+  text-decoration: none;
 }
 
 .header div h1:hover {

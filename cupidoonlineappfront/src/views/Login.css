@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap");
 
-form {
+#loginform {
   height: 89vh;
   width: 98vw;
   display: flex;
@@ -10,7 +10,7 @@ form {
   justify-content: center;
   font-family: "Fredoka", sans-serif;
 }
-form input {
+#loginform input {
   margin-bottom: 20px;
 }
 
@@ -27,7 +27,7 @@ input:hover {
   border: pink 1px solid;
 }
 
-button {
+#loginbutton {
   font-family: "Fredoka", sans-serif;
   background-color: #f8f5f8;
   border-radius: 10px;
@@ -38,7 +38,7 @@ button {
   font-weight: bold;
 }
 
-button:hover {
+#loginbutton:hover {
   background-color: pink;
   transition: 1s;
 }
