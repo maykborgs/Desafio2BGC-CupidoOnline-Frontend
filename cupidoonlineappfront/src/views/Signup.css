@@ -10,11 +10,11 @@
   justify-content: center;
   font-family: "Fredoka", sans-serif;
 }
-#signupform input {
+#signupform .inputsignup {
   margin-bottom: 20px;
 }
 
-input {
+.inputsignup {
   font-family: "Fredoka", sans-serif;
   border-width: 1px;
   margin-top: 10px;
@@ -23,7 +23,7 @@ input {
   border-radius: 10px;
 }
 
-input:hover {
+.inputsignup:hover {
   border: pink 1px solid;
 }
 

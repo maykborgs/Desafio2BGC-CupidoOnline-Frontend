@@ -10,20 +10,20 @@
   justify-content: center;
   font-family: "Fredoka", sans-serif;
 }
-#loginform input {
+#loginform .inputlogin {
   margin-bottom: 20px;
 }
 
-input {
+.inputlogin {
   font-family: "Fredoka", sans-serif;
   border-width: 1px;
   margin-top: 10px;
-  width: 25%;
+  width: 20%;
   padding: 5px;
   border-radius: 10px;
 }
 
-input:hover {
+.inputlogin:hover {
   border: pink 1px solid;
 }
 

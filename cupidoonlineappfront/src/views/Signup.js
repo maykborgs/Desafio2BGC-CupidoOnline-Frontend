@@ -9,13 +9,13 @@ const Signup = () => {
     <Header/>
       <form id="signupform">
       <label>Nome: </label>  
-      <input placeholder="Digite seu nome"></input>
+      <input className="inputsignup" placeholder="Digite seu nome"></input>
       <label>E-mail: </label>  
-      <input type="email" placeholder="Digite seu e-mail"></input>
+      <input className="inputsignup" type="email" placeholder="Digite seu e-mail"></input>
       <label>Senha: </label>  
-      <input type="password" placeholder="Digite sua senha"></input>
+      <input className="inputsignup" type="password" placeholder="Digite sua senha"></input>
       <label>Confirme sua Senha: </label>  
-      <input type="password" placeholder="Confirme sua senha"></input>
+      <input className="inputsignup" type="password" placeholder="Confirme sua senha"></input>
       <button id="signupbutton" type="submit">Cadastrar</button>
       </form>
   </div>  
