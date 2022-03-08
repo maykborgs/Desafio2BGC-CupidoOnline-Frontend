@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap");
+
+.header {
+  background-color: pink;
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100vw;
+  height: 8vh;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: black;
+  border-bottom-style: solid;
+  border-width: 1px;
+  font-family: "Fredoka", sans-serif;
+}
+
+.header div {
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header div h1 {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: 300;
+  font-size: x-large;
+  cursor: pointer;
+}
+
+.header div h1:hover {
+  color: #f8f5f8;
+  transition: 0.2s;
+}
+
+.header img {
+  height: 30px;
+  width: 35px;
+}
