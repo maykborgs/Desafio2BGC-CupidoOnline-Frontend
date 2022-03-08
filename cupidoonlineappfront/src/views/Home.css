@@ -1,22 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap");
+
 .header {
-  background-color: aqua;
-  display: flex;
+  background-color: pink;
+  display: grid;
+  grid-template-columns: auto auto;
   width: 100vw;
   height: 8vh;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
+  border-bottom: black;
+  border-bottom-style: solid;
+  border-width: 1px;
+  font-family: "Fredoka", sans-serif;
 }
 
-.header h1 {
-  margin-right: 25px;
+.header div {
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#firstitemheader {
-  margin-right: 64%;
+.header div h1 {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: 300;
+  font-size: x-large;
+  cursor: pointer;
+}
+
+.header div h1:hover {
+  color: #f8f5f8;
+  transition: 0.2s;
+}
+
+.header img {
+  height: 30px;
+  width: 35px;
 }
 
 main {
-  height: 92vh;
+  height: 91.5vh;
   display: flex;
   background-color: #f8f5f8;
 }
@@ -26,29 +50,70 @@ main img {
 }
 
 form {
-  height: 92vh;
+  height: 91.5vh;
   width: 50vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
+  margin-left: 30px;
   justify-content: center;
-  background-color: blueviolet;
+  font-family: "Fredoka", sans-serif;
 }
 form input {
   margin-bottom: 20px;
 }
 
-form h1 {
-  margin-top: -19vh;
+form p {
+  font-family: "Fredoka", sans-serif;
+  font-size: xx-large;
+  text-align: left;
 }
 
 form p img {
-  height: 15px;
-  width: 15px;
+  height: 25px;
+  width: 20px;
 }
 
 #mensagem {
   width: 50%;
   height: 30%;
   margin-bottom: 20px;
+  margin-top: 10px;
+  font-family: "Fredoka", sans-serif;
+  padding: 8px;
+  border-radius: 10px;
+  resize: none;
+}
+
+#mensagem:hover {
+  border-color: pink;
+}
+
+input {
+  font-family: "Fredoka", sans-serif;
+  border-width: 1px;
+  margin-top: 10px;
+  width: 50%;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+input:hover {
+  border: pink 1px solid;
+}
+
+button {
+  font-family: "Fredoka", sans-serif;
+  background-color: #f8f5f8;
+  border-radius: 10px;
+  height: 8%;
+  width: 20%;
+  border-width: 1px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: pink;
+  transition: 1s;
 }
