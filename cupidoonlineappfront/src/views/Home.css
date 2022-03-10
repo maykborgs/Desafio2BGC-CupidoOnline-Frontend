@@ -28,17 +28,16 @@ main img {
   font-family: "Fredoka", sans-serif;
   font-size: xx-large;
   text-align: left;
-  margin: 0;
+  margin-bottom: 5px;
+  margin-top: 25px;
 }
-
-#homeform p img {
-  height: 25px;
-  width: 20px;
+#homeform h1 {
+  margin-bottom: 0;
 }
 
 #mensagem {
   width: 50%;
-  height: 30%;
+  height: 20%;
   margin-bottom: 20px;
   margin-top: 10px;
   font-family: "Fredoka", sans-serif;
@@ -78,4 +77,58 @@ main img {
 #homebutton:hover {
   background-color: pink;
   transition: 1s;
+}
+
+@media (max-width: 800px) {
+  main {
+    height: 120vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f5f8;
+  }
+
+  main img {
+    width: 50%;
+  }
+
+  #homeform {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0px;
+    justify-content: center;
+  }
+
+  #homeform p {
+    padding: 20px;
+    font-family: "Fredoka", sans-serif;
+    font-size: x-large;
+    text-align: justify;
+    margin: 0;
+  }
+
+  #homeform h1 {
+    margin: 20px;
+    text-align: center;
+  }
+
+  #homebutton {
+    font-family: "Fredoka", sans-serif;
+    background-color: #f8f5f8;
+    border-radius: 10px;
+    height: 10%;
+    width: 20%;
+    border-width: 1px;
+    border-color: black;
+    color: black;
+  }
+
+  #mensagem {
+    height: 15%;
+  }
 }

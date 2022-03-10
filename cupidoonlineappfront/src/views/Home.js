@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { API } from 'aws-amplify';
+import { ToastContainer, toast } from 'react-toastify';
 
+
+import 'react-toastify/dist/ReactToastify.css';
 import Header from "../components/Header"
 
 import './Home.css';
@@ -16,11 +19,14 @@ const Home = () => {
     async function sendMail(body) {
         try {
             await API.post("cupidoonline", "/send", {body});
-            alert("Email enviado para seu/sua crush <3")
-            //openConfirmModal();
+            toast.success("Email enviado para seu/sua crush <3", {
+                position: toast.POSITION.TOP_CENTER
+              });
         } catch (e) {
             console.error(e);
-           alert.error("Falha ao enviar o e-mail!");
+           toast.error("Falha ao enviar o e-mail!", {
+            position: toast.POSITION.TOP_CENTER
+          });
         }
     }
 
@@ -32,7 +38,9 @@ const Home = () => {
         event.preventDefault();
 
         if (!name || !email || !message) {
-            alert("Preencha todos os campos!");
+            toast.info("Preencha todos os campos!", {
+                position: toast.POSITION.TOP_CENTER
+              })
         } else {
 
             const body = {
@@ -56,17 +64,19 @@ const Home = () => {
     <Header/>
     <main>
       <form onSubmit={handleSubmit} id="homeform">
-      <h1>Olá, bem vindo ao Cupido Online !</h1>
-      <p>Aqui você pode enviar uma mensagem anônima para aquele crush que você está de 👀 sem que ele saiba que é você, ao menos que você queira...</p>
-      <label>Nome: </label>  
-      <input onChange={handleChange('name')} className="inputhome" placeholder="Digite o nome da/do crush"></input>
-      <label type="email">E-mail: </label>  
-      <input onChange={handleChange('email')} className="inputhome" placeholder="Digite o e-mail da/do crush"></input>
-      <label>Mensagem: </label>  
-      <textarea onChange={handleChange('message')} id="mensagem" placeholder="Digite a mensagem para sua/seu crush"></textarea>
-      <button type="submit" id="homebutton">Enviar</button>
+        <h1>Olá, bem vindo ao Cupido Online !</h1>
+        <p>Aqui você pode enviar uma mensagem anônima para aquele crush que você está de 👀 sem que ele saiba que é você, ao menos que você queira...</p>
+        <label>Nome: </label>  
+            <input onChange={handleChange('name')} className="inputhome" placeholder="Digite o nome da/do crush"></input>
+        <label type="email">E-mail: </label>  
+            <input onChange={handleChange('email')} className="inputhome" placeholder="Digite o e-mail da/do crush"></input>
+        <label>Mensagem: </label>  
+            <textarea onChange={handleChange('message')} id="mensagem" placeholder="Digite a mensagem para sua/seu crush"></textarea>
+        <button type="submit" id="homebutton">Enviar</button>
+        <ToastContainer />
       </form>
-       <img alt="cupid"src="https://i.pinimg.com/originals/dd/10/eb/dd10eb337856d14a8640828f99dd7a2f.gif"></img>
+      <img alt="cupid"src="https://i.pinimg.com/originals/dd/10/eb/dd10eb337856d14a8640828f99dd7a2f.gif">
+      </img>
     </main>
   </div>  
   
