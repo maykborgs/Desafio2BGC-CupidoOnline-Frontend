@@ -1,3 +1,7 @@
+## Cupido Online
+
+This application provides you a chance to send an E-mail to the person that you like in a anonymous way...
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
