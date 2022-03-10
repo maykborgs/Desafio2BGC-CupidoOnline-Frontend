@@ -8,8 +8,6 @@ const Signup = () => {
   <div>
     <Header/>
       <form id="signupform">
-      <label>Nome: </label>  
-      <input className="inputsignup" placeholder="Digite seu nome"></input>
       <label>E-mail: </label>  
       <input className="inputsignup" type="email" placeholder="Digite seu e-mail"></input>
       <label>Senha: </label>  
