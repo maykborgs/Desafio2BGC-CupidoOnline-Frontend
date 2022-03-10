@@ -1,8 +1,13 @@
 ## Cupido Online
 
+Frontend code for the challenge of a selection process in the company BGC Brasil.<br></br>
 This application provides you a chance to send an E-mail to the person that you like in a anonymous way...
 
 # Getting Started with Create React App
+
+### `npm i`
+
+You need to use this command to install the dependences before you user npm start, to use npm i you need to install node.js.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
